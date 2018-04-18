@@ -1,0 +1,5 @@
+[plugins]
+load=testplugin.py;urlplugin.py;
+
+[ui]
+resource.message=false
