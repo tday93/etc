@@ -1,0 +1,25 @@
+
+use 1 Evilometer
+Source Terminal: status
+Source Terminal: educate
+Source Terminal: enhance
+Source Terminal: enquiry
+Source Terminal: extrude
+You have free rests available but KoLmafia thought you had none.
+
+showplayer.php?who=2061509
+
+Visiting Hot Dog Stand in clan VIP lounge
+
+Visiting Speakeasy in clan VIP lounge
+
+Visiting Floundry in clan VIP lounge
+You have free rests available but KoLmafia thought you had none.
+
+showplayer.php?who=2061509
+
+Visiting Hot Dog Stand in clan VIP lounge
+
+Visiting Speakeasy in clan VIP lounge
+
+Visiting Floundry in clan VIP lounge

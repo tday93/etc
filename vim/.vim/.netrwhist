@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/tday/projects/discordbot/memes'
+let g:netrw_dirhist_2='/home/tday/projects/discordbot/.git'
+let g:netrw_dirhist_3='/home/tday/projects/discordbot'

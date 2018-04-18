@@ -1,0 +1,6 @@
+[
+    "appstream://org.kde.krita.desktop",
+    "appstream://org.kde.kdenlive.desktop",
+    "appstream://org.kde.dolphin.desktop",
+    "appstream://org.kde.development"
+]

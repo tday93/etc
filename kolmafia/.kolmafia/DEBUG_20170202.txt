@@ -1,0 +1,166 @@
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           KoLmafia v17.6 r17761, Linux, Java 1.8.0_121
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Please note: do not post this log in the KoLmafia thread of KoL's
+ Gameplay-Discussion forum. If you would like the KoLmafia dev team
+ to look at it, please write a bug report at kolmafia.us. Include
+ specific information about what you were doing when you made this
+ and include this log as an attachment.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Timestamp: Thu Feb 02 10:56:28 PST 2017
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+net.sourceforge.kolmafia.swingui.LoginFrame could not be loaded
+class java.lang.reflect.InvocationTargetException: null
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at net.sourceforge.kolmafia.CreateFrameRunnable.runConstruction(CreateFrameRunnable.java:286)
+	at net.sourceforge.kolmafia.CreateFrameRunnable.createFrame(CreateFrameRunnable.java:182)
+	at net.sourceforge.kolmafia.CreateFrameRunnable.run(CreateFrameRunnable.java:164)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:301)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.awt.HeadlessException: 
+No X11 DISPLAY variable was set, but this program performed an operation which requires it.
+	at java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:204)
+	at java.awt.Window.<init>(Window.java:536)
+	at java.awt.Frame.<init>(Frame.java:420)
+	at java.awt.Frame.<init>(Frame.java:385)
+	at javax.swing.JFrame.<init>(JFrame.java:189)
+	at net.sourceforge.kolmafia.swingui.GenericFrame.<init>(GenericFrame.java:160)
+	at net.sourceforge.kolmafia.swingui.LoginFrame.<init>(LoginFrame.java:84)
+	... 21 more
+net.sourceforge.kolmafia.swingui.LoginFrame could not be loaded
+class java.awt.HeadlessException: 
+No X11 DISPLAY variable was set, but this program performed an operation which requires it.
+java.awt.HeadlessException: 
+No X11 DISPLAY variable was set, but this program performed an operation which requires it.
+	at java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:204)
+	at java.awt.Window.<init>(Window.java:536)
+	at java.awt.Frame.<init>(Frame.java:420)
+	at java.awt.Frame.<init>(Frame.java:385)
+	at javax.swing.JFrame.<init>(JFrame.java:189)
+	at net.sourceforge.kolmafia.swingui.GenericFrame.<init>(GenericFrame.java:160)
+	at net.sourceforge.kolmafia.swingui.LoginFrame.<init>(LoginFrame.java:84)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at net.sourceforge.kolmafia.CreateFrameRunnable.runConstruction(CreateFrameRunnable.java:286)
+	at net.sourceforge.kolmafia.CreateFrameRunnable.createFrame(CreateFrameRunnable.java:182)
+	at net.sourceforge.kolmafia.CreateFrameRunnable.run(CreateFrameRunnable.java:164)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:301)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+net.sourceforge.kolmafia.swingui.LoginFrame could not be loaded
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           KoLmafia v17.6 r17761, Linux, Java 1.8.0_121
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Please note: do not post this log in the KoLmafia thread of KoL's
+ Gameplay-Discussion forum. If you would like the KoLmafia dev team
+ to look at it, please write a bug report at kolmafia.us. Include
+ specific information about what you were doing when you made this
+ and include this log as an attachment.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ Timestamp: Thu Feb 02 10:56:28 PST 2017
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+net.sourceforge.kolmafia.swingui.OptionsFrame could not be loaded
+class java.lang.reflect.InvocationTargetException: null
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at net.sourceforge.kolmafia.CreateFrameRunnable.runConstruction(CreateFrameRunnable.java:286)
+	at net.sourceforge.kolmafia.CreateFrameRunnable.createFrame(CreateFrameRunnable.java:182)
+	at net.sourceforge.kolmafia.CreateFrameRunnable.run(CreateFrameRunnable.java:164)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:301)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+Caused by: java.awt.HeadlessException: 
+No X11 DISPLAY variable was set, but this program performed an operation which requires it.
+	at java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:204)
+	at java.awt.Window.<init>(Window.java:536)
+	at java.awt.Frame.<init>(Frame.java:420)
+	at java.awt.Frame.<init>(Frame.java:385)
+	at javax.swing.JFrame.<init>(JFrame.java:189)
+	at net.sourceforge.kolmafia.swingui.GenericFrame.<init>(GenericFrame.java:160)
+	at net.sourceforge.kolmafia.swingui.OptionsFrame.<init>(OptionsFrame.java:133)
+	... 21 more
+net.sourceforge.kolmafia.swingui.OptionsFrame could not be loaded
+class java.awt.HeadlessException: 
+No X11 DISPLAY variable was set, but this program performed an operation which requires it.
+java.awt.HeadlessException: 
+No X11 DISPLAY variable was set, but this program performed an operation which requires it.
+	at java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:204)
+	at java.awt.Window.<init>(Window.java:536)
+	at java.awt.Frame.<init>(Frame.java:420)
+	at java.awt.Frame.<init>(Frame.java:385)
+	at javax.swing.JFrame.<init>(JFrame.java:189)
+	at net.sourceforge.kolmafia.swingui.GenericFrame.<init>(GenericFrame.java:160)
+	at net.sourceforge.kolmafia.swingui.OptionsFrame.<init>(OptionsFrame.java:133)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at net.sourceforge.kolmafia.CreateFrameRunnable.runConstruction(CreateFrameRunnable.java:286)
+	at net.sourceforge.kolmafia.CreateFrameRunnable.createFrame(CreateFrameRunnable.java:182)
+	at net.sourceforge.kolmafia.CreateFrameRunnable.run(CreateFrameRunnable.java:164)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:301)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+net.sourceforge.kolmafia.swingui.OptionsFrame could not be loaded

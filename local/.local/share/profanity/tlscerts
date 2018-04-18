@@ -1,0 +1,9 @@
+[a9713f72243112f8544c93190999950d8e58bdec]
+version=3
+serialnumber=8
+subjectname=/C=US/ST=California/O=Tyrr Networks/OU=Core Infrastructure/CN=comms.tyrr.net
+issuername=/C=US/ST=California/L=Los Angeles/O=Tyrr Networks/OU=Public CA/CN=Tyrr Networks Root CA
+start=Aug 22 04:35:28 2015 GMT
+end=Aug 21 04:35:28 2016 GMT
+keyalg=rsaEncryption
+signaturealg=sha256WithRSAEncryption

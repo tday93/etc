@@ -1,0 +1,16 @@
+[tyrr]
+enabled=true
+jid=tday@tyrr.net
+resource=profanity
+muc.service=conference.tyrr.net
+muc.nick=tday
+presence.last=away
+presence.login=online
+priority.online=69
+priority.chat=69
+priority.away=69
+priority.xa=69
+priority.dnd=69
+server=comms.tyrr.net
+last.activity=2017-02-10T19:38:46.589264Z
+presence.laststatus=discord yo

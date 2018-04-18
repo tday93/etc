@@ -1,0 +1,14 @@
+set colorscheme jungle
+set colorscheme snow
+set colorscheme solarized
+open_with j
+cd /web/flask/siteroot/static/
+flat 1
+cd ~
+open_with 
+bulkrename
+
+open_with nvim
+flat 0
+?
+help

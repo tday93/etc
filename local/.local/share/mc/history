@@ -1,0 +1,21 @@
+[cmdline]
+0=OA
+1=
+
+[Dir Hist New Right Panel]
+0=/home/tday/dotfiles/config/mc
+1=/home/tday/dotfiles/config/nautilus
+2=/home/tday/dotfiles/config/neofetch
+3=/home/tday/Documents
+4=/home/tday/Music
+5=/home/tday/projects
+6=/home/tday/tdaycareer
+7=/home/tday/.config
+8=/home/tday
+
+[Dir Hist New Left Panel]
+0=/home/tday/dotfiles/config/dconf
+1=/home/tday/dotfiles/config/mc
+2=/home/tday/dotfiles/config
+3=/home/tday/dotfiles
+4=/home/tday
