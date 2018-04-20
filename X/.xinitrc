@@ -48,6 +48,10 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-xrandr --output VGA-1 --mode 1600X900
+xset r rate 200 30
+
+feh --bg-max ~/usr/pics/bg.jpg
+
+xrandr --output VGA-1 --mode 1920x1080
 xrdb -load $HOME/.Xresources
 exec i3

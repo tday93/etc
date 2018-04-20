@@ -32,9 +32,9 @@ Plug 'sjl/vitality.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
 Plug 'grassdog/tagman.vim'
 " Really nice prompt
+Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'bling/vim-airline'
-let g:airline_theme='base16'
+let g:airline_theme='wombat'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_section_z=''
@@ -47,7 +47,7 @@ vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 
 " Awesome autocompletion
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --gocode-completer --tern-completer' }
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --gocode-completer --tern-completer' }
 
 " Lightning fast :Ag searcher
 Plug 'rking/ag.vim'

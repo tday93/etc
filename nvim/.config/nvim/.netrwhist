@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/tday/.oh-my-zsh'
 let g:netrw_dirhist_2='/home/tday/etc/.git'
+let g:netrw_dirhist_3='/home/tday/.i3'
+let g:netrw_dirhist_4='/home/tday/etc/nvim/.config/nvim/plugged/vim-airline-themes'
