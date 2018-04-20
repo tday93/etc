@@ -1,0 +1,22 @@
+[package]
+name = "wayland-window"
+version = "0.13.2"
+authors = ["Victor Berger <victor.berger@m4x.org>"]
+repository = "https://github.com/Smithay/wayland-window"
+documentation = "https://smithay.github.io/wayland-window/wayland_window/"
+license = "MIT"
+description = "A minimalistic window-decorations library built on top of wayland-client."
+categories = ["gui"]
+
+[badges]
+travis-ci = { repository = "Smithay/wayland-window" }
+
+[dependencies]
+tempfile = "2.0"
+memmap = "0.6"
+wayland-client = { version = "0.12.0", features = ["cursor"] }
+wayland-protocols = { version = "0.12.0", features = ["client", "unstable_protocols"] }
+
+[dev-dependencies]
+byteorder = "1.0"
+wayland-client = { version = "0.12.0", features = ["cursor", "dlopen"] }

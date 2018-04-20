@@ -32,8 +32,6 @@ Plug 'terryma/vim-expand-region'
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 
-" Awesome autocompletion
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --gocode-completer --tern-completer' }
 
 " Lightning fast :Ag searcher
 Plug 'rking/ag.vim'

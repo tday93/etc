@@ -12,3 +12,5 @@ open_with nvim
 flat 0
 ?
 help
+shell mkdir ~/usr/tmp
+shell mkdir ~/usr/pics

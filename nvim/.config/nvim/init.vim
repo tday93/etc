@@ -35,10 +35,10 @@ Plug 'grassdog/tagman.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bling/vim-airline'
 let g:airline_theme='base16'
-let g:airline_left_sep=''
+let g:airline_left_sep='|'
 let g:airline_right_sep=''
 let g:airline_section_z=''
-Plug 'flazz/vim-colorschemes' 
+Plug 'flazz/vim-colorschemes'
 Plug 'justinmk/vim-dirvish'
 
 " Press v over and over again to expand selection
@@ -152,7 +152,11 @@ nnoremap <silent> <Leader><Space> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar
 nnoremap H 0
 nnoremap L $
 
-silent! colorscheme wombat256i 
+inoremap jk <Esc>
+
+set timeout timeoutlen=500 ttimeoutlen=0
+
+silent! colorscheme wombat256i
 
 command! -bar Tags if !empty(tagfiles()) | call fzf#run({
 \   'source': "sed '/^\\!/d;s/\t.*//' " . join(tagfiles()) . ' | uniq',

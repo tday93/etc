@@ -1,0 +1,21 @@
+[package]
+name = "serde_yaml"
+version = "0.7.3"
+authors = ["David Tolnay <dtolnay@gmail.com>"]
+license = "MIT/Apache-2.0"
+description = "YAML support for Serde"
+repository = "https://github.com/dtolnay/serde-yaml"
+documentation = "https://docs.rs/serde_yaml/"
+readme = "README.md"
+keywords = ["yaml", "serde"]
+
+[dependencies]
+linked-hash-map = "0.5"
+num-traits = "0.1.37"
+serde = "1.0"
+yaml-rust = "0.4"
+
+[dev-dependencies]
+serde_derive = "1.0"
+unindent = "0.1"
+version-sync = "0.5"
