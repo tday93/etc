@@ -77,6 +77,9 @@ Plug 'danro/rename.vim'
 " flow = static type checker for js
 Plug 'flowtype/vim-flow'
 
+" python completion
+Plug 'davidhalter/jedi-vim'
+
 
 
 " Automatically find root project directory
