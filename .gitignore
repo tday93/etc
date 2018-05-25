@@ -1,1 +1,2 @@
-nvim/.config/plugged/
+nvim/.config/nvim/plugged/
+.DS_Store
