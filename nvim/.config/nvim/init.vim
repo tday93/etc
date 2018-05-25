@@ -2,8 +2,8 @@ set t_Co=256
 let mapleader = "\<Space>"
 let maplocalleader = ","
 
-let g:python_host_prog = '/bin/python'
-let g:python3_host_prog = '/bin/python3'
+let g:python_host_prog = '/usr/local/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'
 
 
 let g:python_host_skip_check=1
@@ -79,8 +79,17 @@ Plug 'flowtype/vim-flow'
 
 " python completion
 Plug 'davidhalter/jedi-vim'
+let g:jedi#completions_enabled = 0
 
-
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'zchee/deoplete-jedi'
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
 
 " Automatically find root project directory
 Plug 'airblade/vim-rooter'
