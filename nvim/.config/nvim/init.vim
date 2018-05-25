@@ -26,10 +26,15 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 Plug 'sheerun/vimrc'
+" extra text objects
 Plug 'wellle/targets.vim'
+" language packs
 Plug 'sheerun/vim-polyglot'
+" make vim play nice with tmux
 Plug 'sjl/vitality.vim'
+" fuzzy find
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+" auto generates ctags????
 Plug 'grassdog/tagman.vim'
 " Really nice prompt
 Plug 'vim-airline/vim-airline'
@@ -49,21 +54,30 @@ vmap <C-v> <Plug>(expand_region_shrink)
 " Awesome autocompletion
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --gocode-completer --tern-completer' }
 
-" Lightning fast :Ag searcher
-Plug 'rking/ag.vim'
+" adds more surroundings
 Plug 'tpope/vim-surround'
+" comment things easily with 'gc'
 Plug 'tomtom/tcomment_vim'
+" readline key bindings??
 Plug 'tpope/vim-rsi'
+" auto structure ending
 Plug 'tpope/vim-endwise'
+" git wrapper
 Plug 'tpope/vim-fugitive'
+" fixes repeating plugin maps
 Plug 'tpope/vim-repeat'
+" sets buffer options based on current file
 Plug 'tpope/vim-sleuth'
+" handy bracket mappings
 Plug 'tpope/vim-unimpaired'
 
 " Allow to :Rename files
 Plug 'danro/rename.vim'
 
+" flow = static type checker for js
 Plug 'flowtype/vim-flow'
+
+
 
 " Automatically find root project directory
 Plug 'airblade/vim-rooter'
@@ -75,10 +89,6 @@ Plug 'AndrewRadev/splitjoin.vim'
 nmap sj :SplitjoinSplit<cr>
 nmap sk :SplitjoinJoin<cr>
 
-Plug 'fatih/vim-go', { 'for': 'go' }
-let g:go_fmt_command = "goimports"
-Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh', 'for': 'go' }
-
 Plug 'moll/vim-node', { 'for': 'javascript' }
 
 " Navitate freely between tmux and vim
@@ -89,9 +99,9 @@ Plug 'junegunn/vim-easy-align'
 vmap <Enter> <Plug>(EasyAlign)
 nmap <Leader>a <Plug>(EasyAlign)
 
-" colored 81st column
+" colored 89st column
 highlight ColorColumn ctermbg=magenta
-call matchadd('ColorColumn', '\%81v',100)
+call matchadd('ColorColumn', '\%89v',100)
 " ii / ai
 Plug 'michaeljsmith/vim-indent-object'
 
