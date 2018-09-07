@@ -1,3 +1,0 @@
-[State]
-timestamp=1494968624
-converted=mutter-schemas.convert;gsettings-desktop-schemas.convert;gvfs-dns-sd.convert;gnome-session.convert;gnome-shell-overrides.convert;org.gnome.crypto.pgp.convert;gnome-settings-daemon.convert;org.gnome.crypto.pgp_keyservers.convert;wm-schemas.convert;
