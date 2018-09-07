@@ -1,4 +1,9 @@
 set t_Co=256
+" restore cursor to last position
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+endif
+
 let mapleader = "\<Space>"
 let maplocalleader = ","
 
@@ -10,6 +15,9 @@ let g:python_host_skip_check=1
 let g:loaded_python2_provider=1
 let g:targets_aiAI = 'aIAi'
 
+" dont redraw screen while runnning macros
+set lazyredraw
+
 
 let g:flow#enable = 0
 
@@ -19,7 +27,8 @@ Plug 'vim-syntastic/syntastic'
 let g:syntastic_text_checkers = ['proselint']
 let g:syntastic_html_checkers = ['tidy']
 let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_python_checkers = ['python', 'flake8']
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_quiet_messages = {'regex': 'E501' }
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -81,15 +90,11 @@ Plug 'flowtype/vim-flow'
 Plug 'davidhalter/jedi-vim'
 let g:jedi#completions_enabled = 0
 
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'zchee/deoplete-jedi'
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
+Plug 'fszymanski/deoplete-emoji'
 let g:deoplete#enable_at_startup = 1
+
 
 " Automatically find root project directory
 Plug 'airblade/vim-rooter'
@@ -137,7 +142,13 @@ Plug 'vim-scripts/SmartCase'
 
 Plug 'junegunn/goyo.vim'
 
+Plug 'chriskempson/base16-vim'
+
 call plug#end()
+
+set termguicolors
+
+colorscheme base16-material
 
 set relativenumber
 
@@ -177,8 +188,6 @@ nnoremap L $
 inoremap jk <Esc>
 
 set timeout timeoutlen=500 ttimeoutlen=0
-
-silent! colorscheme wombat256i
 
 command! -bar Tags if !empty(tagfiles()) | call fzf#run({
 \   'source': "sed '/^\\!/d;s/\t.*//' " . join(tagfiles()) . ' | uniq',

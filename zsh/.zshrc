@@ -101,5 +101,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias sshit='ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oCiphers=+3des-cbc -p 22'
+alias python='python3'
+alias vim='nvim'
+alias ovim='vim'
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
