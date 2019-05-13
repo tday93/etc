@@ -34,21 +34,33 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" Snippet Engine
+Plug 'SirVer/ultisnips'
+
+" Snippt trigger configuration.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 " vim wiki
 Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 let g:vimwiki_list = [{'path': '~/Google Drive/Notes/vimwiki/wiki', 'path_html':'~/Google Drive/Notes/vimwiki/export/html'}]
 
+" language pack
 Plug 'sheerun/vimrc'
+
 " extra text objects
 Plug 'wellle/targets.vim'
+
 " language packs
 Plug 'sheerun/vim-polyglot'
+
 " make vim play nice with tmux
 Plug 'sjl/vitality.vim'
+
 " fuzzy find
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
-" auto generates ctags????
-Plug 'grassdog/tagman.vim'
+
 " Really nice prompt
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -66,16 +78,22 @@ vmap <C-v> <Plug>(expand_region_shrink)
 
 " adds more surroundings
 Plug 'tpope/vim-surround'
+
 " comment things easily with 'gc'
 Plug 'tomtom/tcomment_vim'
+
 " auto structure ending
 Plug 'tpope/vim-endwise'
+
 " git wrapper
 Plug 'tpope/vim-fugitive'
+
 " fixes repeating plugin maps
 Plug 'tpope/vim-repeat'
+
 " sets buffer options based on current file
 Plug 'tpope/vim-sleuth'
+
 " handy bracket mappings
 Plug 'tpope/vim-unimpaired'
 
@@ -88,6 +106,7 @@ Plug 'flowtype/vim-flow'
 " BIND file syntax
 Plug 'Absolight/vim-bind'
 
+" auto-completion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 Plug 'fszymanski/deoplete-emoji'
@@ -104,6 +123,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 nmap sj :SplitjoinSplit<cr>
 nmap sk :SplitjoinJoin<cr>
 
+" JS Node 
 Plug 'moll/vim-node', { 'for': 'javascript' }
 
 " Navitate freely between tmux and vim
