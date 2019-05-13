@@ -1,0 +1,8 @@
+2018-10-15 10:50:28 INFO logger.py:126 Log level: INFO
+2018-10-15 10:50:28 INFO main.py:259 GNS3 GUI version 2.1.11
+2018-10-15 10:50:28 INFO main.py:260 Copyright (c) 2007-2018 GNS3 Technologies Inc.
+2018-10-15 10:50:28 INFO main.py:262 Application started with /Applications/GNS3.app/Contents/MacOS/gns3
+2018-10-15 10:50:59 CRITICAL __init__.py:386 Could not find a VM named 'GNS3 VM', is it imported in VMware or VirtualBox?
+2018-10-15 10:51:08 WARNING __init__.py:144 VirtualBox doesn't support nested virtualization, this means running Qemu based VM could be very slow
+2018-10-15 10:51:10 CRITICAL __init__.py:151 VBoxManage could not be found, VirtualBox is probably not installed. After installation you need to restart GNS3.
+2018-10-15 10:51:12 CRITICAL __init__.py:386 Could not find a VM named 'GNS3 VM', is it imported in VMware or VirtualBox?

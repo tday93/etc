@@ -34,6 +34,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" vim wiki
+Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
+let g:vimwiki_list = [{'path': '~/Google Drive/Notes/vimwiki/wiki', 'path_html':'~/Google Drive/Notes/vimwiki/export/html'}]
+
 Plug 'sheerun/vimrc'
 " extra text objects
 Plug 'wellle/targets.vim'
@@ -60,15 +64,10 @@ Plug 'terryma/vim-expand-region'
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 
-" Awesome autocompletion
-" Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --gocode-completer --tern-completer' }
-
 " adds more surroundings
 Plug 'tpope/vim-surround'
 " comment things easily with 'gc'
 Plug 'tomtom/tcomment_vim'
-" readline key bindings??
-Plug 'tpope/vim-rsi'
 " auto structure ending
 Plug 'tpope/vim-endwise'
 " git wrapper
@@ -86,9 +85,8 @@ Plug 'danro/rename.vim'
 " flow = static type checker for js
 Plug 'flowtype/vim-flow'
 
-" python completion
-Plug 'davidhalter/jedi-vim'
-let g:jedi#completions_enabled = 0
+" BIND file syntax
+Plug 'Absolight/vim-bind'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
@@ -116,9 +114,6 @@ Plug 'junegunn/vim-easy-align'
 vmap <Enter> <Plug>(EasyAlign)
 nmap <Leader>a <Plug>(EasyAlign)
 
-" colored 89st column
-highlight ColorColumn ctermbg=magenta
-call matchadd('ColorColumn', '\%89v',100)
 " ii / ai
 Plug 'michaeljsmith/vim-indent-object'
 
@@ -126,21 +121,9 @@ Plug 'michaeljsmith/vim-indent-object'
 set foldmethod=indent
 set fillchars="fold: "
 
-" Nice file browsing with -
-Plug 'eiginn/netrw'
-let g:netrw_altfile = 1
-Plug 'tpope/vim-vinegar'
-
-" Set nice 80-characters limiter
-" execute "set colorcolumn=" . join(range(81,335), ',')
-" hi ColorColumn guibg=#262626 ctermbg=235
-
 " Better search tools
 Plug 'vim-scripts/IndexedSearch'
 Plug 'vim-scripts/SmartCase'
-" Plug 'vim-scripts/gitignore'
-
-Plug 'junegunn/goyo.vim'
 
 Plug 'chriskempson/base16-vim'
 
@@ -151,6 +134,10 @@ set termguicolors
 colorscheme base16-material
 
 set relativenumber
+
+" tabe completion for file names
+set wildmode=longest,list,full
+set wildmenu
 
 autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
@@ -163,7 +150,8 @@ vmap <Leader>p "+p
 vmap <Leader>P "+P
 nmap <Leader><Leader> V
 nmap <Leader>b :make<CR>
-nnoremap <Leader><Tab> <C-^>
+nnoremap <Leader><Tab> 0w>>
+nnoremap <Leader><S-Tab> 0w<<
 nnoremap <Leader>y :!annotate expand('%:p') " what?
 
 nnoremap <Leader>o :FZF<CR>
