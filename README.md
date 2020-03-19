@@ -1,1 +1,1 @@
-# dotfiles managed with gnu stow
+# dotfiles
