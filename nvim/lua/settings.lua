@@ -1,6 +1,7 @@
 HOME = os.getenv("HOME")
 
-vim.g.mapleader = "<Space>"
+-- Leader Mapping
+vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
 vim.g.python3_host_prog = "/usr/bin/python3"
@@ -39,8 +40,6 @@ vim.cmd([[
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 ]])
 
-
-
 -- Commands mode
 vim.o.wildmenu = true -- on TAB, complete options for system command
 vim.o.wildmode = "longest,list,full"
@@ -50,3 +49,20 @@ vim.o.wildmode = "longest,list,full"
 vim.o.background = 'dark'
 
 vim.o.termguicolors = true
+
+
+---- Start NERDTree automatically, put cursor back in main window
+vim.cmd([[
+autocmd VimEnter * NERDTree | wincmd p
+  ]])
+
+---- Close the tab if NERDTree is the only window remaining in it.
+vim.cmd([[
+autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+  ]])
+
+---- Open the existing NERDTree on each new tab.
+vim.cmd([[
+autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
+  ]])
+

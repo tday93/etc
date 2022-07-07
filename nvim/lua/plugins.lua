@@ -40,24 +40,66 @@ return require('packer').startup(function()
   vim.g.airline_right_sep = ''
   vim.g.airline_section_z = ''
 
+  --- Nerdtree
+  use 'preservim/nerdtree'
+
+  --- Treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
 
   --- LSP and Completion
   use {
     'williamboman/nvim-lsp-installer',
-    {
-      'neovim/nvim-lspconfig',
-      config = function()
-	require("nvim-lsp-installer").setup {}
-	local lspconfig = require("lspconfig")
-	lspconfig.sumneko_lua.setup {}
-	lspconfig.terraformls.setup {}
-      end
-    }
+    'neovim/nvim-lspconfig',
   }
 
-  use {'ms-jpq/coq_nvim', branch = 'coq'}
-  vim.g.coq_settings = { auto_start = "shut-up" }
-  use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
+  local on_attach = function(client, bufnr)
+
+  end
+
+  local lsp_flags = {
+    debounce_text_changes = 150,
+  }
+
+
+  require("nvim-lsp-installer").setup {}
+  require('lspconfig')['sumneko_lua'].setup {
+    on_attach = on_attach,
+    flags = lsp_flags,
+    settings = {
+      Lua = {
+	diagnostics = {
+	  globals = {'vim'},
+	},
+      },
+    },
+  }
+
+  require('lspconfig')['terraformls'].setup {
+    on_attach = on_attach,
+    flags = lsp_flags,
+  }
+
+  --- Autocompletion
+  -- use {'ms-jpq/coq_nvim', branch = 'coq'}
+  -- vim.g.coq_settings = {
+  --   keymap = {
+  --     recommended = false,
+  --     jump_to_mark = '',
+  --     pre_select = true,
+  --   },
+  --   auto_start = "shut-up"
+  -- }
+  -- use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
+  --
+
+  --- Worldbuilding/Writing
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
