@@ -14,6 +14,8 @@ vim.o.backspace = "indent,eol,start" -- backspace works on every character in in
 vim.o.history = 1000
 vim.o.completeopt = 'menuone,noselect'
 
+vim.o.signcolumn = 'yes'
+
 -- Display
 
 vim.o.foldenable = false
@@ -22,7 +24,7 @@ vim.o.foldmethod = 'syntax'
 -- Sidebar
 vim.o.number = true -- absolute line number for line
 vim.o.relativenumber = true -- relative line numbers
-vim.o.numberwidth = 3 -- reserve three spaces for line number
+vim.o.numberwidth = 4 -- reserve three spaces for line number
 vim.o.showcmd = true -- display command in bottom bar
 
 -- White Characters
@@ -33,6 +35,7 @@ vim.o.shiftwidth = 2 -- indentation rule
 vim.cmd([[
   au BufRead,BufNewFile */tasks/*.yml set filetype=yaml.ansible
 ]])
+
 
 
 -- Restore cursor to last position

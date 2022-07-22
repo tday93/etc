@@ -74,15 +74,10 @@ _G.packer_plugins = {
     path = "/home/tday/.local/share/nvim/site/pack/packer/start/base16-vim",
     url = "https://github.com/chriskempson/base16-vim"
   },
-  ["coq.artifacts"] = {
+  nerdtree = {
     loaded = true,
-    path = "/home/tday/.local/share/nvim/site/pack/packer/start/coq.artifacts",
-    url = "https://github.com/ms-jpq/coq.artifacts"
-  },
-  coq_nvim = {
-    loaded = true,
-    path = "/home/tday/.local/share/nvim/site/pack/packer/start/coq_nvim",
-    url = "https://github.com/ms-jpq/coq_nvim"
+    path = "/home/tday/.local/share/nvim/site/pack/packer/start/nerdtree",
+    url = "https://github.com/preservim/nerdtree"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -94,10 +89,20 @@ _G.packer_plugins = {
     path = "/home/tday/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/tday/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/tday/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/tday/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["targets.vim"] = {
     loaded = true,
@@ -108,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tday/.local/share/nvim/site/pack/packer/start/tcomment_vim",
     url = "https://github.com/tomtom/tcomment_vim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/tday/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-airline"] = {
     loaded = true,

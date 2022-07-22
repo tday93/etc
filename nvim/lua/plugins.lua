@@ -23,7 +23,7 @@ return require('packer').startup(function()
   use 'tpope/vim-surround' -- adds additional surroundings
 
   --- Utility
-	use 'tpope/vim-fugitive' -- Git commands
+  use 'tpope/vim-fugitive' -- Git commands
   use 'bronson/vim-trailing-whitespace' -- highlight trailing spaces
   use 'tomtom/tcomment_vim' -- easy commenting with gc
   use 'airblade/vim-rooter' -- Auto find root project directory
@@ -64,36 +64,16 @@ return require('packer').startup(function()
   }
 
 
-  require("nvim-lsp-installer").setup {}
-  require('lspconfig')['sumneko_lua'].setup {
-    on_attach = on_attach,
-    flags = lsp_flags,
-    settings = {
-      Lua = {
-	diagnostics = {
-	  globals = {'vim'},
-	},
-      },
-    },
-  }
-
-  require('lspconfig')['terraformls'].setup {
-    on_attach = on_attach,
-    flags = lsp_flags,
+  require("nvim-lsp-installer").setup {
+    automatic_installation = true
   }
 
   --- Autocompletion
-  -- use {'ms-jpq/coq_nvim', branch = 'coq'}
-  -- vim.g.coq_settings = {
-  --   keymap = {
-  --     recommended = false,
-  --     jump_to_mark = '',
-  --     pre_select = true,
-  --   },
-  --   auto_start = "shut-up"
-  -- }
-  -- use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
-  --
+  use {'ms-jpq/coq_nvim', branch = 'coq'}
+  use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
+
+
+
 
   --- Worldbuilding/Writing
   use {
