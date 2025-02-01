@@ -1,8 +1,0 @@
-WRN 2022-06-21T10:52:44.499 ?.24961    server_start:166: Failed to start server: no such file or directory: /home/tday/.local/state/nvim/
-WRN 2022-06-21T10:52:44.637 ?.24961    server_start:166: Failed to start server: no such file or directory: /home/tday/.local/state/nvim/
-WRN 2022-06-21T10:53:21.818 ?.24968    server_start:166: Failed to start server: no such file or directory: /home/tday/.local/state/nvim/
-WRN 2022-06-21T10:53:21.958 ?.24968    server_start:166: Failed to start server: no such file or directory: /home/tday/.local/state/nvim/
-WRN 2022-06-21T10:54:01.267 ?.24975    server_start:166: Failed to start server: no such file or directory: /home/tday/.local/state/nvim/
-WRN 2022-06-21T10:54:01.405 ?.24975    server_start:166: Failed to start server: no such file or directory: /home/tday/.local/state/nvim/
-WRN 2022-06-21T10:54:10.739 ?.24979    server_start:166: Failed to start server: no such file or directory: /home/tday/.local/state/nvim/
-WRN 2022-06-21T10:54:10.880 ?.24979    server_start:166: Failed to start server: no such file or directory: /home/tday/.local/state/nvim/
